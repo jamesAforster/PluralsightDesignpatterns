@@ -1,0 +1,12 @@
+{
+  "id": "/toaster",
+  "state": "off",
+  "operations": [{
+    "method": "PUT",
+    "href": "/toaster",
+    "expects": { "state":  "on" }
+  }]
+}
+
+
+
