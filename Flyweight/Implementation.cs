@@ -13,11 +13,11 @@ namespace Flyweight
     /// </summary>
     public class CharacterA : ICharacter
     {
-        private readonly char _actualCharacter = 'a';
+        private readonly char _actualCharacter = 'a'; // intrinsic state
         private string _fontFamily = String.Empty;
         private int _fontSize;
 
-        public void Draw(string fontFamily, int fontSize)
+        public void Draw(string fontFamily, int fontSize) // extrinsic state
         {
             _fontFamily = fontFamily;
             _fontSize  = fontSize;
@@ -27,11 +27,11 @@ namespace Flyweight
     
     public class CharacterB : ICharacter
     {
-        private readonly char _actualCharacter = 'b';
+        private readonly char _actualCharacter = 'b'; // intrinsic state
         private string _fontFamily = String.Empty;
         private int _fontSize;
 
-        public void Draw(string fontFamily, int fontSize)
+        public void Draw(string fontFamily, int fontSize) // extrinsic state
         {
             _fontFamily = fontFamily;
             _fontSize  = fontSize;
@@ -41,11 +41,11 @@ namespace Flyweight
     
     public class CharacterC : ICharacter
     {
-        private readonly char _actualCharacter = 'c';
+        private readonly char _actualCharacter = 'c'; // intrinsic state
         private string _fontFamily = String.Empty;
         private int _fontSize;
 
-        public void Draw(string fontFamily, int fontSize)
+        public void Draw(string fontFamily, int fontSize) // extrinsic state
         {
             _fontFamily = fontFamily;
             _fontSize  = fontSize;
